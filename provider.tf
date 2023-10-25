@@ -1,10 +1,5 @@
 provider "aws" {
   region = "eu-west-1"
-}
-
-provider "aws" {
-  alias  = "second-account"
-  region = "eu-west-1"
 
   assume_role {
     role_arn     = "arn:aws:iam::541230295344:role/cross_account"
